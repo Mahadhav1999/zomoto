@@ -111,13 +111,7 @@ app.get('/filter/:mealId',(req,res) => {
 
 
 //menu
-app.get('/menu/:restid',(req,res) => {
-    var restid = Number(req.params.restid)
-    db.collection('menu').find({restaurant_id:restid}).toArray((err,result) => {
-        if(err) throw err;
-        res.send(result)
-    })
-})
+
 
 
 // return all the menu
