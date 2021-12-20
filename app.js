@@ -36,14 +36,14 @@ app.get('/mealType',(req,res) => {
     })
 })
 
-/*
-// return all the restaurants
+
+//return all the restaurants
 app.get('/restaurants',(req,res) => {
-    db.collection('restaurants').find().toArray((err,result) => {
-        if(err) throw err;
-        res.send(result)
+     db.collection('restaurants').find().toArray((err,result) => {
+         if(err) throw err;
+         res.send(result)
     })
-})*/
+ })
 
 // restaurant wrt to id
 app.get('/restaurant/:id',(req,res) => {
