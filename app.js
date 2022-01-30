@@ -110,9 +110,6 @@ app.get('/filter/:mealId',(req,res) => {
 })
 
 
-//menu
-
-
 
 // return all the menu
 app.get('/menu/:restid',(req,res) => {
